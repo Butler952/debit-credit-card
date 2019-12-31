@@ -5,6 +5,12 @@ module.exports = {
     author: `@aaronactivate`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        useResolveUrlLoader: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
