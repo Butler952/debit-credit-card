@@ -22,15 +22,18 @@ export default class EmailForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form 
+        onSubmit={this.handleSubmit}
+        className={this.props.className}>
         <div className="position-rel">
           <input 
-            placeholder="Input with Button" 
+            className="HeroInput"
+            placeholder={this.props.placeholder} 
             type="text" 
             name="name"
             value={this.state.name}
             onChange={this.handleInputChange}/>
-          <button class="btn btn-Primary btn-input" type="submit">Submit</button>
+          <button className="btn btn-Secondary btn-input" type="submit">{this.props.buttoncta}</button>
         </div>
       </form>
     )

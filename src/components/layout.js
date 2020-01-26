@@ -28,13 +28,17 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <div className="Container">
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <div className="Container">
+              <h3><a href="#">Legal Stuff</a></h3>
+              <h3><a href="#">Terms and Conditions</a></h3>
+              <h3><a href="#">Cookie Policy</a></h3>
+              <h3><a href="#">Refer a Friend</a></h3>
+              <h3><a href="#">Write a review</a></h3>
+              <br></br>
+              © Copyright notCredit {new Date().getFullYear()}
+            </div>
           </footer>
-        </div>
       </div>
     </>
   )

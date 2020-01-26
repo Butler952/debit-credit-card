@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './Header.css'
 
+
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -29,10 +30,8 @@ class Header extends React.Component {
     return (
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <Link to="/"><img width="30" src={require('../images/gatsby-icon.png')} /></Link>
-          <Link to="/courses">Courses</Link>
-          <Link to="/downloads">Downloads</Link>
-          <Link to="/workshops">Workshops</Link>
+          <Link className="d-flex align-items-center" to="/"><div className="LogoRound"></div><h2>notCredit</h2></Link>
+          <Link className="btn btn-SecondaryGhost" to="/page-2/">Sign Up</Link>
         </div>
       </div>
     )
@@ -40,4 +39,6 @@ class Header extends React.Component {
 }
 
 export default Header
+
+
 

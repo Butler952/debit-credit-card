@@ -5,24 +5,80 @@ import './index.scss'
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Feature from "../components/feature"
+import EmailForm from "../components/emailForm"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="Hero">
-      <div className="HeroGroup">
-        <h1>Build your credit score with a debit card</h1>
-        <p>Complete courses about the best tools and design systems. Prototype and build apps with React and Swift.</p>
-        <Link className="btn-PrimaryAlt" to="/page-2/">Watch the video</Link>
+    <div className="HeroSection">
+      <div className="Container">
+        <div className="Hero">
+          <div className="HeroGroup">
+            <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <EmailForm
+              className="HeroForm"
+              placeholder="Email address"
+              buttoncta="Sign up"
+            />
+          </div>
+          <div className="HeroImage">
+            <img className="AnglePhoneImage" src={require('../images/Apple_pay_and_card_hero.png')} />
+          </div>
+        </div>
       </div>
     </div>
-    <h1>Build a credit score with a debit card</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="FeatureSection">
+      <div className="Container">
+      <h1 className="text-center">The safest way to build credit</h1>
+        <div className="FeatureGroup">
+          <Feature 
+              class="Feature"
+              mainFeature={false}
+              image={require('../images/debit_card.png')}
+              title="Debit Card"
+              listItem1="😫	 Doesn't improve credit score"
+              listItem2="🚨	 Poor security against fraud"
+              listItem3="😅	 No debt" />
+          <Feature 
+              class="Feature"
+              mainFeature={true}
+              image={require('../images/noCredit_card.png')}
+              title="notCredit"
+              listItem1="🎉	 Supercharges credit score"
+              listItem2="🛡	 3x Better fraud protection"
+              listItem3="🙌	 No debt"
+              buttonLabel="Sign Up" />
+          <Feature 
+              class="Feature"
+              mainFeature={false}
+              image={require('../images/credit_card.png')}
+              title="Credit Card"
+              listItem1="👍	 Builds credit score"
+              listItem2="🔒	 Good fraud protection"
+              listItem3="😡	 Risk of accumulating debt" />
+        </div>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="EndCTASection">
+      <div className="Container">
+        <div className="Hero">
+          <div className="EndCTAImage">
+            <img className="AnglePhoneImage" src={require('../images/Apple_pay_and_card_hero_flip.png')} />
+          </div>
+          <div className="EndCTAGroup">
+            <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <EmailForm
+              className="HeroForm"
+              placeholder="Email address"
+              buttoncta="Sign up"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 

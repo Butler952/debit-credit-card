@@ -34,19 +34,27 @@ const ElementsPage = () => (
             <h1>Buttons</h1>
             <div className="Group">
                 <p>Primary</p>
-                <Link className="btn btn-Primary" to="/page-2/">Go to page 2</Link>
+                <Link className="btn btn-Primary" to="/page-2/">Action</Link>
             </div>
             <div className="Group">
-                <p>Ghost</p>
-                <Link className="btn btn-Ghost" to="/page-2/">Go to page 2</Link>
-            </div>
-            <div className="Group">
-                <p>Primary Alt</p>
-                <Link className="btn btn-PrimaryAlt" to="/page-2/">Go to page 2</Link>
+                <p>Primary Ghost</p>
+                <Link className="btn btn-PrimaryGhost" to="/page-2/">Action</Link>
             </div>
             <div className="Group">
                 <p>Secondary</p>
-                <Link className="btn btn-Secondary" to="/page-2/">Go to page 2</Link>
+                <Link className="btn btn-Secondary" to="/page-2/">Action</Link>
+            </div>
+            <div className="Group">
+                <p>Secondary Ghost</p>
+                <Link className="btn btn-SecondaryGhost" to="/page-2/">Action</Link>
+            </div>
+            <div className="Group">
+                <p>Primary Alt</p>
+                <Link className="btn btn-PrimaryAlt" to="/page-2/">Action</Link>
+            </div>
+            <div className="Group">
+                <p>Dark</p>
+                <Link className="btn btn-Dark" to="/page-2/">Action</Link>
             </div>
         </div>
     
@@ -54,7 +62,7 @@ const ElementsPage = () => (
             <h1>Links</h1>
             <div className="Group">
                 <p>Text</p>
-                <Link className="btn-Text" to="/page-2/">Go to page 2</Link>
+                <Link className="btn-Text" to="/page-2/">Action</Link>
             </div>
         </div>
 
@@ -66,7 +74,10 @@ const ElementsPage = () => (
             </div>
             <div className="Group">
                 <p>Input with Button</p> 
-                <EmailForm/>
+                <EmailForm
+                    placeholder="Email address"
+                    buttoncta="Sign up"
+                />
             </div>
             <div className="Group">
                 <p>Basic Input with Label</p>
@@ -79,11 +90,26 @@ const ElementsPage = () => (
         <div className="Container">
             <h1>Card</h1>
             <div className="Group">
+            <p>Basic Card</p>
                 <div className="Card">
-                    <p className="Caption">Caption</p>
-                    <h2>Card Title</h2>
-                    <p>Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.</p>
-                    <Link className="btn btn-Ghost" to="/page-2/">Go to page 2</Link>
+                    <div className="CardContent">
+                        <p className="Caption">Caption</p>
+                        <h2>Card Title</h2>
+                        <p>Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.</p>
+                        <Link className="btn btn-PrimaryGhost" to="/page-2/">Action</Link>
+                    </div>
+                </div>
+            </div>
+            <div className="Group">
+            <p>Card with Image</p>
+                <div className="Card">
+                    <img className="CardImage" src={require('../images/Mentoring v2.jpg')} />
+                    <div className="CardContent">
+                        <p className="Caption">Caption</p>
+                        <h2>Card Title</h2>
+                        <p>Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.</p>
+                        <Link className="btn btn-PrimaryGhost" to="/page-2/">Action</Link>
+                    </div>
                 </div>
             </div>
         </div>
