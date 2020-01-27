@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/* Base Rules */
+@import '../components/Header.scss';
+
 /* Tokens */
 
 $mobile-breakpoint: 720px;
@@ -452,7 +455,7 @@ footer a:hover{
 
 .Feature.Main {
   border: 1px solid $light-grey;
-  box-shadow: $shadow-2;
+  box-shadow: $shadow-1;
 }
 
 .Feature.Standard {
