@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import './elements.scss'
+/*import './elements.scss'*/
 import Layout from "../components/layout"
 import EmailForm from "../components/emailForm"
 
