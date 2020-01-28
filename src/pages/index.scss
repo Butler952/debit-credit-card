@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  font: 100% $font-stack;
+  font: 100% $font-stack!important;
   margin: 0;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
