@@ -2,11 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 /*import './elements.scss'*/
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 import EmailForm from "../components/emailForm"
 
 const ElementsPage = () => (
     <Layout>
+        <SEO title="Elements" />
         <div className="Elements Hero">
             <div className="HeroGroup">
                 <h1>Elements</h1>

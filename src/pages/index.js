@@ -5,12 +5,12 @@ import './index.scss'
 import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Feature from "../components/feature"
+import Feature from "../components/Feature"
 import EmailForm from "../components/emailForm"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Build your credit score with a debit card" />
     <div className="HeroSection">
       <div className="Container">
         <div className="Hero">
