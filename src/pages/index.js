@@ -2,10 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import './index.scss'
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Feature from "../components/Feature"
+import Feature from "../components/feature"
 import EmailForm from "../components/emailForm"
 
 const IndexPage = () => (
