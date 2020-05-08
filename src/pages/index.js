@@ -16,7 +16,7 @@ const IndexPage = () => (
         <div className="Hero">
           <div id="HeroGroup" className="HeroGroup">
             <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
-            <p>Improve your credit score like as if you were using a credit card, but without the debt.</p>
+            <p>Improve your credit score as if you were using a credit card, but without the debt.</p>
             <EmailForm
               className="HeroForm"
               placeholder="Email address"
@@ -68,7 +68,7 @@ const IndexPage = () => (
           </div>
           <div id="#EndCTAGroup" className="EndCTAGroup">
             <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
-            <p>Improve your credit score like as if you were using a credit card, but without the debt.</p>
+            <p>Improve your credit score as if you were using a credit card, but without the debt.</p>
             <EmailForm
               className="HeroForm"
               placeholder="Email address"
