@@ -68,7 +68,6 @@ p, input {
   font-size: 14px;
   color: rgba(0,0,0,0.6);
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
 }
 
 img {
@@ -81,6 +80,11 @@ a {
   font-weight: 600;
 }
 
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
 input {
   font-size: 20px;
   width: 100%;
@@ -89,7 +93,6 @@ input {
   border-radius: $radius-btn;
   padding: 8px 20px;
   box-sizing: border-box;
-  margin: 0.25rem 0 0.75rem 0;
   transition: $transition-standard;
 }
 
@@ -118,17 +121,18 @@ input.HeroInput {
 .btn {
   display: inline-block;
   font-weight: 600;
-  padding: 7px 24px;
+  padding: 6px 24px;
   border-radius: $radius-btn;
   transition: $transition-standard;
   cursor: pointer;
+  line-height: 24px;
 }
 
 .btn-input {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  margin: 0.25rem 0 0.75rem 0;
+  top: 0;
+  right: 0;
+  margin: 10px;
 }
 
 .btn-Primary {

@@ -81,9 +81,8 @@ const ElementsPage = () => (
             </div>
             <div className="Group">
                 <p>Basic Input with Label</p>
-                <label>Label
-                    <input placeholder="Basic Input" type="text" />
-                </label>
+                <label>Label</label>
+                <input placeholder="Basic Input" type="text" />
             </div>
         </div>
 

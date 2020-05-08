@@ -44,8 +44,8 @@ const IndexPage = () => (
           <Feature 
               class="Feature"
               mainFeature={true}
-              image={require('../images/noCredit_card.png')}
-              title="notCredit"
+              image={require('../images/Bamboo_card.png')}
+              title="Bamboo"
               listItem1="🎉	 Supercharges credit score"
               listItem2="🛡	 3x Better fraud protection"
               listItem3="🙌	 No debt"
