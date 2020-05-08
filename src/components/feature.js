@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 
  const Feature = props => (
-  <div className={"Feature " + (props.mainFeature ? 'Main' : 'Standard')}>
+  <div className={"Feature " + (props.mainFeature ? 'Card' : 'Standard')}>
       <img src={props.image} />
       <div>
         <h2>{props.title}</h2>
@@ -11,7 +11,6 @@ import { Link } from "gatsby"
           <li><p>{props.listItem2}</p></li>
           <li><p>{props.listItem3}</p></li>
         </ul>
-        {(props.mainFeature ? <Link className="btn btn-Primary w-100 text-center" to="/page-2/">{props.buttonLabel}</Link> : ' ')}
       </div>
   </div>
 )

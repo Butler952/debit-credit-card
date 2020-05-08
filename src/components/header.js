@@ -5,7 +5,6 @@ import Link from 'gatsby-link'
 class Header extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = {
       hasScrolled: false
     }
@@ -30,7 +29,6 @@ class Header extends React.Component {
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
           <Link className="d-flex align-items-center" to="/"><div className="LogoRound"></div><h2>Bamboo</h2></Link>
-          <Link className="btn btn-SecondaryGhost" to="/page-2/">Sign Up</Link>
         </div>
       </div>
     )

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import './index.scss'
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Feature from "../components/feature"
@@ -14,9 +14,9 @@ const IndexPage = () => (
     <div className="HeroSection">
       <div className="Container">
         <div className="Hero">
-          <div className="HeroGroup">
+          <div id="HeroGroup" className="HeroGroup">
             <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <p>Improve your credit score like as if you were using a credit card, but without the debt.</p>
             <EmailForm
               className="HeroForm"
               placeholder="Email address"
@@ -38,7 +38,7 @@ const IndexPage = () => (
               mainFeature={false}
               image={require('../images/debit_card.png')}
               title="Debit Card"
-              listItem1="😫	 Doesn't improve credit score"
+              listItem1="😫	 Doesn't help credit score"
               listItem2="🚨	 Poor security against fraud"
               listItem3="😅	 No debt" />
           <Feature 
@@ -47,9 +47,8 @@ const IndexPage = () => (
               image={require('../images/Bamboo_card.png')}
               title="Bamboo"
               listItem1="🎉	 Supercharges credit score"
-              listItem2="🛡	 3x Better fraud protection"
-              listItem3="🙌	 No debt"
-              buttonLabel="Sign Up" />
+              listItem2="🛡	 Awesome fraud protection"
+              listItem3="🙌	 No debt" />
           <Feature 
               class="Feature"
               mainFeature={false}
@@ -67,9 +66,9 @@ const IndexPage = () => (
           <div className="EndCTAImage">
             <img className="AnglePhoneImage" src={require('../images/Apple_pay_and_card_hero_flip.png')} />
           </div>
-          <div className="EndCTAGroup">
+          <div id="#EndCTAGroup" className="EndCTAGroup">
             <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <p>Improve your credit score like as if you were using a credit card, but without the debt.</p>
             <EmailForm
               className="HeroForm"
               placeholder="Email address"
