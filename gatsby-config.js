@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Debit to Credit`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Bamboo`,
+    description: `Improve your credit score like as if you were using a credit card, but without the debt.`,
     author: `@aaronactivate`,
   },
   plugins: [
@@ -30,7 +30,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/notCredit_Logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/Bamboo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
