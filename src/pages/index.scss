@@ -89,7 +89,7 @@ input {
   font-size: 20px;
   width: 100%;
   border: 1px solid $medium-grey;
-  line-height: 26px;
+  line-height: 26px!important;
   border-radius: $radius-btn;
   padding: 8px 20px;
   box-sizing: border-box;
