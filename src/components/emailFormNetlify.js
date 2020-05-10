@@ -1,5 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby-link'
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
   const encode = (data) => {
     return Object.keys(data)
@@ -16,6 +17,15 @@ import { navigate } from 'gatsby-link'
     /* Here’s the juicy bit for posting the form submission */
 
     handleSubmit = e => {
+      // Lets track that custom click
+      trackCustomEvent({
+        // string - required - The object that was interacted with (e.g.video)
+        category: "Form",
+        // string - required - Type of interaction (e.g. 'play')
+        action: "Submit",
+        // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+        label: this.props.analyticsName,
+      })
       const form = e.target
       fetch("/", {
         method: "POST",

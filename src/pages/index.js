@@ -18,6 +18,7 @@ const IndexPage = () => (
             <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
             <p>Improve your credit score as if you were using a credit card, but without the debt.</p>
             <EmailForm
+              analyticsName="Top Hero CTA"
               className="HeroForm"
               placeholder="Email address"
               buttoncta="Sign up"
@@ -70,6 +71,7 @@ const IndexPage = () => (
             <h1>Build your credit score with a <span className="HeroTitleUnderline"><span>debit card</span><div></div></span></h1>
             <p>Improve your credit score as if you were using a credit card, but without the debt.</p>
             <EmailForm
+              analyticsName="End Hero CTA"
               className="HeroForm"
               placeholder="Email address"
               buttoncta="Sign up"
