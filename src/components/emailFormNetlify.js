@@ -50,12 +50,12 @@ export default class EmailForm extends React.Component {
       action="/page-2/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      onSubmit={handleSubmit}
+      onSubmit={this.handleSubmit}
       className={this.props.className}>
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>
           <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+            Don’t fill this out: <input name="bot-field" onChange={this.handleInputChange} />
           </label>
         </p>
         <div className="position-rel">
