@@ -72,14 +72,3 @@ export default class EmailForm extends React.Component {
     )
   }
 }
-
-
-
-import React from 'react'
-import { navigate } from 'gatsby-link'
-
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
