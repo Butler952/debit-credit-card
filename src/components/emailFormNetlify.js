@@ -34,6 +34,7 @@ import { navigate } from 'gatsby-link'
       const { email } = this.state;
       return (
         <form 
+          name="contact"
           onSubmit={this.handleSubmit} 
           className={this.props.className}
           action="/page-2/"
@@ -42,11 +43,16 @@ import { navigate } from 'gatsby-link'
           data-netlify-honeypot="bot-field"
           >
           <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </p>
           <div className="position-rel">
             <input 
               className="HeroInput"
               placeholder={this.props.placeholder} 
-              type="text" 
+              type="email" 
               name="email"
               value={email}
               onChange={this.handleChange}/>
