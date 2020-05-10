@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import { navigate } from 'gatsby-link'
 
 function encode(data) {
@@ -7,14 +7,27 @@ function encode(data) {
     .join('&')
 }
 
-export default function EmailForm() {
-  const [state, setState] = React.useState({})
+export default class EmailForm extends React.Component {
+  state = {
 
-  const handleChange = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  handleInputChange = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
+
+    this.setState({
+      [name]: value,
+    })
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    alert(`Welcome ${this.state.name}!`)
+  }
+
+  handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
     fetch('/', {
@@ -29,8 +42,9 @@ export default function EmailForm() {
       .catch((error) => alert(error))
   }
 
-  return (
-    <form
+  render() {
+    return (
+      <form
       name="sign-up-form"
       method="POST"
       action="/page-2/"
@@ -38,21 +52,34 @@ export default function EmailForm() {
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className={this.props.className}>
-      <input type="hidden" name="form-name" value="contact" />
-      <p hidden>
-        <label>
-          Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-        </label>
-      </p>
-      <div className="position-rel">
-        <input
-          className="HeroInput"
-          placeholder={this.props.placeholder}
-          type="text"
-          name="email"
-          onChange={handleChange} />
-        <button className="btn btn-Secondary btn-input" type="submit">{this.props.buttoncta}</button>
-      </div>
-    </form>
-  )
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
+        <div className="position-rel">
+          <input
+            className="HeroInput"
+            placeholder={this.props.placeholder}
+            type="text"
+            name="email"
+            value={this.state.name}
+            onChange={this.handleInputChange}/>
+          <button className="btn btn-Secondary btn-input" type="submit">{this.props.buttoncta}</button>
+        </div>
+      </form>
+    )
+  }
+}
+
+
+
+import React from 'react'
+import { navigate } from 'gatsby-link'
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
