@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Feature from "../components/feature"
-import EmailForm from "../components/emailForm"
+import EmailForm from "../components/emailFormNetlify"
 
 const IndexPage = () => (
   <Layout>
