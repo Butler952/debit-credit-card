@@ -9,7 +9,7 @@ function encode(data) {
 
 export default class EmailForm extends React.Component {
   state = {
-
+    firstName: "",
   }
 
   handleInputChange = event => {
