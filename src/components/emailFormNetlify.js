@@ -24,11 +24,6 @@ export default class EmailForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    alert(`Welcome ${this.state.name}!`)
-  }
-
-  handleSubmit = (e) => {
-    e.preventDefault()
     const form = e.target
     fetch('/', {
       method: 'POST',
