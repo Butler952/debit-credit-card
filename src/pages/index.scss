@@ -4,6 +4,7 @@
 /* Base Rules */
 @import '../components/Header.scss';
 @import './elements.scss';
+@import './margin-padding.scss';
 
 /* Tokens */
 
@@ -61,6 +62,7 @@ h1, h2, h3, h4 {
 p, input {
   font-weight: 500;
   color: rgba(0,0,0,0.7);
+  line-height: 1.4;
 }
 
 .Caption, label {
@@ -118,6 +120,8 @@ input.HeroInput {
   color: rgba(0,0,0,0.4);
 }
 
+/* Button Styles */ 
+
 .btn {
   display: inline-block;
   font-weight: 600;
@@ -126,6 +130,7 @@ input.HeroInput {
   transition: $transition-standard;
   cursor: pointer;
   line-height: 24px;
+  outline: none;
 }
 
 .btn-input {
@@ -204,6 +209,50 @@ input.HeroInput {
   color: white;
   border: 2px solid $dark-color;
 }
+
+.Modal {
+  position: absolute;
+  outline: none;
+  top: 64px;
+  width: 100%;
+  max-width: 640px;
+  padding: 2rem;
+  background: white;
+  box-shadow: $shadow-2;
+  border-radius: $radius-md;
+  border: 1px solid $light-grey;
+  box-sizing: border-box;
+  transition: $transition-standard;
+  overflow: hidden;
+}
+
+.Overlay {
+  z-index: 101;
+  position: fixed;
+  justify-content: center;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+}
+
+.closeIcon {
+  cursor: pointer;
+  float: right;
+}
+
+.closeIcon g path {
+  fill: $medium-grey;
+  transition: $transition-standard;
+}
+
+.closeIcon:hover > g path {
+  fill: $dark-color;
+}
+
 
 .Container {
   animation: FadeUp 3s 0.6s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
