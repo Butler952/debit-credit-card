@@ -78,11 +78,11 @@ import TheBambooTeam from '../icons/TheBambooTeam'
               </g>
             </svg>
               <h1>Thank you</h1>
-              <p>We're still working on putting the finishing touches on the product buy we're really excited that you're interested in Bamboo.</p>
+              <p>We're still working on putting the finishing touches on the product but we're really excited that you're interested in Bamboo.</p>
               <p>You're in the queue for early access and we'll let you know when Bamboo is ready.</p>
-              <p>Many thanks and speak to you soon,</p>
+              <p className="mb-2">Many thanks and speak to you soon,</p>
               <TheBambooTeam />
-              <p className="mt-2">The Bamboo Tame</p>
+              <p className="mt-2">The Bamboo Team</p>
             </div>
           </Modal>
           <form 
