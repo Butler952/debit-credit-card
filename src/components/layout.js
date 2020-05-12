@@ -14,7 +14,11 @@ import Footer from "./Footer"
 import "./layout.css"
 
 import LogRocket from 'logrocket';
-LogRocket.init('qbfdxd/getbamboo');
+LogRocket.init('qbfdxd/getbamboo', {
+  dom: {
+    inputSanitizer: true,
+  },
+});
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
