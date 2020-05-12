@@ -11,8 +11,8 @@ class Footer extends React.Component {
   render() {
     return (
       <footer>
-        <div className="Container">
-          © Copyright GetBamboo {new Date().getFullYear()}
+        <div className="Container footer">
+          © Copyright GetBamboo {new Date().getFullYear()} <p className="badge badge-Secondary Caption ml-2 my-0" to="/page-2/">Alpha</p>
         </div>
       </footer>
     )

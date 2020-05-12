@@ -59,6 +59,26 @@ const ElementsPage = () => (
                 <Link className="btn btn-Dark" to="/page-2/">Action</Link>
             </div>
         </div>
+
+        <div className="Container">
+            <h1>Badges</h1>
+            <div className="Group">
+                <p>Primary</p>
+                <a className="badge badge-Primary Caption" to="/page-2/">Label</a>
+            </div>
+            <div className="Group">
+                <p>Primary Light</p>
+                <a className="badge badge-PrimaryLight Caption" to="/page-2/">Label</a>
+            </div>
+            <div className="Group">
+                <p>Secondary</p>
+                <a className="badge badge-Secondary Caption" to="/page-2/">Label</a>
+            </div>
+            <div className="Group">
+                <p>Secondary Light</p>
+                <a className="badge badge-SecondaryLight Caption" to="/page-2/">Label</a>
+            </div>
+        </div>
     
         <div className="Container">
             <h1>Links</h1>
