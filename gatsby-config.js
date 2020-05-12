@@ -72,6 +72,16 @@ module.exports = {
         exclude: [`/elements`, `/page-2`],
       }
     },
+    {
+      resolve: ` gatsby-plugin-netlify-headers`,
+      options: {
+        headers: {
+          "/*": [
+            "Access-Control-Allow-Origin: *",
+          ],
+        }
+      }
+    }
   ],
 }
 
