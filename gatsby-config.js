@@ -3,6 +3,7 @@ module.exports = {
     title: `Bamboo`,
     description: `Improve your credit score like as if you were using a credit card, but without the debt.`,
     author: `@aaronactivate`,
+    siteUrl: `https://www.getbamboo.co.uk`,
   },
   plugins: [
     {
@@ -65,5 +66,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`
   ],
 }
