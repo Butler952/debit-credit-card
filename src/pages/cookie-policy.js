@@ -50,6 +50,7 @@ const CookiePolicyPage = () => (
             </div>
         </div>
         <hr></hr>
+        {/*}
         <div className="Container w-960 my-5">
             <div className="Group">
                 <h2>Essential website cookies:</h2>
@@ -172,7 +173,7 @@ const CookiePolicyPage = () => (
                 </div>
             </div>
         </div>
-        <hr></hr>
+        <hr></hr>*/}
         <div className="Container w-960 my-5">
             <div className="Group">
                 <h2>What about other tracking technologies, like web beacons?</h2>
