@@ -59,6 +59,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Poppins'!important;
+  line-height: 1.4;
 }
 
 p, input {
@@ -76,6 +77,10 @@ p, input {
 
 img {
   margin-bottom: 0;
+}
+
+hr {
+  background: $light-grey;
 }
 
 a {
@@ -317,6 +322,10 @@ input.HeroInput {
   margin: 0 auto;
   max-width: 1128px;
   padding: 0 48px;
+}
+
+.Container.w-960 {
+  max-width: 960px;
 }
 
 .Container.footer {
@@ -655,4 +664,6 @@ footer a:hover{
   background-size: cover;
   background-blend-mode: multiply;
   margin-bottom: 4rem;
+  grid-template-columns: 1fr;
+  text-align: center;
 }
