@@ -69,7 +69,7 @@ const CookiePolicyPage = () => (
                 <div className="Card mb-4">
                   <div className="CardContent">
                     <p className="mb-2">Name: __cfduid</p>
-                    <p className="mb-2">Purpose: Used by Cloudflare to identify individual clients behind a shared IP address, and apply security settings on a per - client basis.This is a HTTP type cookie that expires after 1 year.</p>
+                    <p className="mb-2">Purpose: Used by Cloudflare to identify individual clients behind a shared IP address, and apply security settings on a per - client basis. This is a HTTP type cookie that expires after 1 year.</p>
                     <p className="mb-2">Provider: .lr - ingest.io</p>
                     <p className="mb-2">Service: CloudFlare <a href="https://www.cloudflare.com/privacypolicy/">View Service Privacy Policy</a></p>
                     <p className="mb-2">Country: __________</p>
@@ -88,7 +88,7 @@ const CookiePolicyPage = () => (
                 <div className="Card mb-4">
                   <div className="CardContent">
                     <p className="mb-2">Name: _gat#</p>
-                    <p className="mb-2">Purpose: Enables Google Analytics regulate the rate of requesting.It is a HTTP cookie type that lasts for a session.</p>
+                    <p className="mb-2">Purpose: Enables Google Analytics regulate the rate of requesting. It is a HTTP cookie type that lasts for a session.</p>
                     <p className="mb-2">Provider:.getbamboo.co.uk</p>
                     <p className="mb-2">Service: Google Analytics <a href="https://policies.google.com/privacy">View Service Privacy Policy</a></p>
                     <p className="mb-2">Country: United States</p>
