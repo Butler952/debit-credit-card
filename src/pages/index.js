@@ -10,7 +10,7 @@ import EmailForm from "../components/emailFormNetlify"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Build your credit score with a debit card" description="Improve your credit score as if you were using a credit card, but without the debt." />
+    <SEO title="Build your credit score with a debit card"/>
     <div className="HeroSection">
       <div className="Container">
         <div className="Hero">

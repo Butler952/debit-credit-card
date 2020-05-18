@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Bamboo`,
-    description: `Improve your credit score like as if you were using a credit card, but without the debt.`,
+    description: `Improve your credit score as if you were using a credit card, but without the debt.`,
     author: `@aaronactivate`,
     siteUrl: `https://www.getbamboo.co.uk`,
+    image: `/images/Bamboo-MetaImage.jpg`,
+    keywords: `credit card, debit card, debt, build credit, credit score, improve credit score, no debt`,
   },
   plugins: [
     {

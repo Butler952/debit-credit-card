@@ -19,6 +19,9 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
+            image
+            keywords
           }
         }
       }
@@ -26,6 +29,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaImage = `${siteUrl}${image}`
 
   return (
     <Helmet
@@ -38,6 +42,14 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `image`,
+          content: metaImage,
+        },
+        {
+          name: `keywords`,
+          content: site.siteMetadata.keywords.join(",")
         },
         {
           property: `og:title`,
