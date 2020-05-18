@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import MetaImage from '../images/Bamboo-MetaImage.jpg'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -20,7 +21,6 @@ function SEO({ description, lang, meta, title }) {
             description
             author
             siteUrl
-            image
             keywords
           }
         }
@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
+  const metaImage = `${site.siteMetadata.siteUrl}` + MetaImage
 
   return (
     <Helmet
